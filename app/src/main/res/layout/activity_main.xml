@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:layout_height="wrap_content"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
-    android:paddingBottom="8dp">
+    android:paddingBottom="8dp"
+    android:orientation="horizontal">
 
     <TextView
         android:id="@+id/Long"
@@ -17,7 +17,21 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edt_legth"
+        android:id="@+id/edt_Long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/Wide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Lebar"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edt_Wide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"/>
