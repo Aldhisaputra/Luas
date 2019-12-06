@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import kotlin.Int as Int1
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,12 +26,13 @@ class MainActivity : AppCompatActivity() {
 
 
         btn_Hitung?.setOnClickListener {
-            var one = edt_Long?.text
-            var two = edt_Wide?.text
-            Log.d("isi","$one,$two")
+            var P = edt_Long?.text.toString().toInt()
+            var L = edt_Wide?.text.toString().toInt()
+
+            edt_Result?.text =
 
 
-                Toast.makeText(this@MainActivity, "input harus di isi", Toast.LENGTH_SHORT).show()
+
 
 
         }
