@@ -27,9 +27,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_Hitung?.setOnClickListener {
             var P = edt_Long?.text.toString().toInt()
-            var L = edt_Wide?.text.toString().toInt()
+            var l = edt_Wide?.text.toString().toInt()
+            var L =edt_Result?.text
 
-            edt_Result?.text =
+            L
+
 
 
 
