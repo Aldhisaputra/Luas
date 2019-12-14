@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import android.widget.Toast.makeText
 import kotlin.Int as Int1
 
 class MainActivity : AppCompatActivity() {
@@ -28,10 +29,8 @@ class MainActivity : AppCompatActivity() {
         btn_Hitung?.setOnClickListener {
             var P = edt_Long?.text.toString().toInt()
             var l = edt_Wide?.text.toString().toInt()
-            var L = P * l
-            print(L)
-
-
+            var L = P*l
+            edt_Result?.setText(L)
 
 
 
