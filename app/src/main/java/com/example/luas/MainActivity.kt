@@ -1,5 +1,7 @@
 package com.example.luas
 
+import android.icu.lang.UCharacter.GraphemeClusterBreak.L
+import android.os.Build.VERSION_CODES.P
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,10 +29,17 @@ class MainActivity : AppCompatActivity() {
 
 
         btn_Hitung?.setOnClickListener {
-            var P = edt_Long?.text.toString().toInt()
-            var l = edt_Wide?.text.toString().toInt()
-            var L = P*l
-            edt_Result?.setText(L)
+            var longRectangle = edt_Long?.text.toString()
+            //var wide = edt_Wide?.text.toString().toInt()
+            //var large = longRectangle*wide
+            //edt_Result?.setText(large)
+
+            if (longRectangle?.equals("")){
+                Toast.makeText(this@MainActivity, "Panjang harus di isi", Toast.LENGTH_SHORT).show()
+
+            }
+
+
 
 
 
